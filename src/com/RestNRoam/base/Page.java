@@ -271,6 +271,11 @@ public class Page {
 		String Value=driver.findElement(By.name(NameKey)).getAttribute("value");
 		return Value;
 	}
+	
+	public String GetPlaceholderId(String IdKey){
+		String Value = driver.findElement(By.id(IdKey)).getAttribute("placeholder");
+		return Value;
+	}
 
 
 

@@ -73,17 +73,16 @@ public class CreateProperty extends Page{
 		
 	}
 
-	public void SetPricing() {
+	public void SetPricing() throws InterruptedException {
 		ClickXpath("Pricing");
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		WebElement Daily = driver.findElement(By.id("Season1Daily"));
-		jse.executeScript("arguments[0].value = arguments[1];",Daily, CONFIG.getProperty("DailyPrice"));
-		WebElement Weekly = driver.findElement(By.id("Season1Daily"));
-		jse.executeScript("arguments[0].value = arguments[1];",Weekly, CONFIG.getProperty("WeeklyPrice"));
-		WebElement Monthly = driver.findElement(By.id("Season1Daily"));
-		jse.executeScript("arguments[0].value = arguments[1];",Monthly, CONFIG.getProperty("MonthlyPrice"));
-		WebElement Weekned = driver.findElement(By.id("Season1Daily"));
-		jse.executeScript("arguments[0].value = arguments[1];",Weekned, CONFIG.getProperty("WeekEndPrice"));
-		ClickID("SavePrices");
+		Thread.sleep(5000);
+		String DailyPrice=GetPlaceholderId(OR.getProperty("Season1Daily"));
+		System.out.println(DailyPrice);
+		String WeeklyPrice=GetPlaceholderId(OR.getProperty("Season1Weekly"));
+		System.out.println(WeeklyPrice);
+		String MonthlyPrice=GetPlaceholderId(OR.getProperty("Season1Monthly"));
+		System.out.println(MonthlyPrice);
+		String WeekendPrice=GetPlaceholderId(OR.getProperty("Season1Weekend"));
+		System.out.println(WeekendPrice);
 	}
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.RestNRoam.scheduling.SchedulingMode">
+      <class name="com.RestNRoam.RestNRoam.RestNRoamTest">
         <methods>
-          <include name="CreatePropertyBedBreakFast"/>
+          <include name="CreatePropertySavePrices"/>
         </methods>
-      </class> <!-- com.RestNRoam.scheduling.SchedulingMode -->
+      </class> <!-- com.RestNRoam.RestNRoam.RestNRoamTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

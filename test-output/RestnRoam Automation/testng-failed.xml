@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestnRoam Automation]">
+  <test name="RestNRome Module(failed)">
+    <classes>
+      <class name="com.RestNRoam.RestNRoam.RestNRoamTest">
+        <methods>
+          <include name="CreatePropertyApartment"/>
+          <include name="Login"/>
+          <include name="CreatePropertySavePrices"/>
+          <include name="Signup"/>
+          <include name="CreatePropertyHouse"/>
+        </methods>
+      </class> <!-- com.RestNRoam.RestNRoam.RestNRoamTest -->
+    </classes>
+  </test> <!-- RestNRome Module(failed) -->
+</suite> <!-- Failed suite [RestnRoam Automation] -->
