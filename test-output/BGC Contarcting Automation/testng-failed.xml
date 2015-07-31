@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BGC Contarcting Automation]">
+  <test name="Scheduling and Project Module(failed)">
+    <classes>
+      <class name="com.BGCContracting.scheduling.Projects">
+        <methods>
+          <include name="VerifyValidSearchResult"/>
+          <include name="AddScheduleInvalidShift"/>
+          <include name="AddInValidSubProject"/>
+          <include name="LaunchBrowser"/>
+          <include name="AddValidSchedule"/>
+          <include name="AddScheduleInvalidDay"/>
+          <include name="AddValidCrew"/>
+          <include name="AddValidSubProject"/>
+          <include name="LaunchApplication"/>
+          <include name="AddInvalidCrew"/>
+        </methods>
+      </class> <!-- com.BGCContracting.scheduling.Projects -->
+    </classes>
+  </test> <!-- Scheduling and Project Module(failed) -->
+</suite> <!-- Failed suite [BGC Contarcting Automation] -->

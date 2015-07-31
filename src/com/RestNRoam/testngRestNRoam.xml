@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RestnRoam Automation"> 
+ 
+ <test name="RestNRome Module">
+    <classes>
+      <class name="com.RestNRoam.RestNRoam.RestNRoamTest"/> 
+      </classes>
+  </test>
+</suite>
