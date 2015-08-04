@@ -17,7 +17,7 @@ public class RestNRoamTest extends Page{
 		System.out.println("Sign Up as a User");   		      
 		lp.OpenWebsite();
 		lp.SignUp();
-		Thread.sleep(8000);
+		Thread.sleep(15000);
 		lp.VerifySignUp(); 
 	}
 
