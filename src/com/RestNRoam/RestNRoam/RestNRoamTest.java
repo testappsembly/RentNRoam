@@ -1,5 +1,6 @@
 package com.RestNRoam.RestNRoam;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import com.RestNRoam.*;
@@ -58,5 +59,11 @@ public class RestNRoamTest extends Page{
 		CP.SetPricing();
 	}
 	
+	//Close Browser
+	@AfterTest()
+	public void QuitBrowser()
+	{
+		lp.CloseBrowser();
+	}
 
 } 
